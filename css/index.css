@@ -1,0 +1,137 @@
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	padding: 100px;
+	text-align: center;
+	background:#13132f;
+}
+
+main
+{
+	width: 80%;	
+	border: solid 1.5px blue;
+	display: inline-flex;
+	justify-content: center;
+	background-color: black;
+	border-radius: 10px;
+	text-align: justify;
+}
+
+
+div#contenedor
+{	
+	border:solid 1px black;
+	width: 40%;
+	height: 300px;
+	padding: 0;
+	width: 50%;
+	margin: 0;
+	overflow: hidden;
+	position: relative;	
+}
+
+div#contenedor div#tira
+{	
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	/*transition: all .5s;*/
+	
+		
+}
+
+div#contenedor div div.marco
+{
+	border: solid 1px black;
+	height:100%;
+	padding: 0;
+	margin: 0;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+div.imagen1{background-image: url(../imagenes/images.jpg) ;}
+div.imagen2{background-image: url(../imagenes/images1.jpg);}
+div.imagen3{background-image: url(../imagenes/images2.jpg);}
+div.imagen4{background-image: url(../imagenes/images3.jpg);}
+div.imagen5{background-image: url(../imagenes/images.jpg);}
+div.imagen6{background-image: url(../imagenes/images4.jpg);}
+div.imagen7{background-image: url(../imagenes/images5.jpg);}
+div.imagen8{background-image: url(../imagenes/images1.jpg);}
+div.imagen9{background-image: url(../imagenes/images3.jpg);}
+div.imagen10{background-image: url(../imagenes/images2.jpg);}
+
+div#contenedor div.min_img
+{
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	
+}
+div#contenedor div.min_img div
+{
+	background-color: lightgrey;
+	overflow: hidden;
+	border-radius: 50%;
+	border: solid 1px blue;
+	height: .8vw;
+	width: .8vw;	
+	margin: 2px;
+	cursor: pointer;	
+}
+
+.titulos{
+	text-align: center;
+	background-color: #efeeee;
+	margin-bottom: 1px;
+	padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px 0px black;    
+}
+
+.laterales
+{
+	width: 50px;	
+	height: 50px;
+	background-color: rgba(0,0,0,.38);
+	color: white;	
+	margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+#avan
+{
+	right: 0;
+	z-index: 100;
+}
+
+#regr
+{
+	left: 0;
+	z-index: 100;
+}
+
+
